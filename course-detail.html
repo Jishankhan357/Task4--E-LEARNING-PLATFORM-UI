@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Detail - E-Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">E-Learn</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <section class="course-detail">
+    <h2>HTML & CSS Basics</h2>
+    <p>Watch the lesson and track your progress.</p>
+
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mU6anWqZJcc" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <button class="btn" onclick="markComplete()">Mark as Complete</button>
+    <p id="status"></p>
+  </section>
+
+  <script>
+    function markComplete(){
+      document.getElementById('status').innerText = "✅ Lesson Completed!";
+    }
+  </script>
+</body>
+</html>
